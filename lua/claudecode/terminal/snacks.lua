@@ -512,7 +512,6 @@ function M.simple_toggle(cmd_string, env_table, config)
     logger.debug("terminal", "Simple toggle: showing hidden terminal")
     window_manager.display_buffer(terminal.buf, true)
   else
-    -- No terminal exists, create new one
     logger.debug("terminal", "Simple toggle: creating new terminal")
     M.open(cmd_string, env_table, config)
   end
